@@ -1,9 +1,8 @@
-gerar imagem
+gerar imagem(como nome apache)
 docker build -t apache .
 
-Criar conteiner
-
-docker run -d -p 80:80 --name [nome do conteiner] -v $(pwd)/app:/var/www/html apache 
+Criar conteiner(com nome apache-server)
+docker run -d -p 80:80 --name apache-server -v $(pwd)/www:/var/www/html apache 
 
 
 

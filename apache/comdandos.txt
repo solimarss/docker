@@ -1,8 +1,11 @@
-gerar imagem(como nome apache)
+gerar imagem (como nome apache) com base no arquivo Dockerfile
 docker build -t apache .
 
-Criar conteiner(com nome apache-server)
-docker run -d -p 80:80 --name apache-server -v $(pwd)/www:/var/www/html apache 
+criar o conteiner com base no arquivo docker-compose.yml 
+docker-compose up -d
 
+
+Se fosse criar conteiner manualmente(com nome apache-server)
+docker run -d -p 80:80 --name apache-server -v $(pwd)/www:/var/www/html apache 
 
 

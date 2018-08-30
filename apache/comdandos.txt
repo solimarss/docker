@@ -2,7 +2,7 @@ gerar imagem (como nome apache) com base no arquivo Dockerfile
 docker build -t apache .
 
 criar o conteiner com base no arquivo docker-compose.yml 
-docker-compose up -d
+docker-compose up
 
 
 Se fosse criar conteiner manualmente(com nome apache-server)

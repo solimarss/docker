@@ -1,2 +1,18 @@
+https://hub.docker.com/_/mysql/
+
 criar o conteiner com base no arquivo docker-compose.yml 
 docker-compose up -d
+
+Para o conteiner com base no arquivo docker-compose.yml 
+docker-compose stop
+
+Excluir o conteiner com base no arquivo docker-compose.yml 
+docker-compose rm
+
+Ver o conteiner com base no arquivo docker-compose.yml 
+docker-compose ps
+
+
+Criar manualmente
+docker run --name mysql-sgbd -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -v $(pwd)/database:/var/lib/mysql/  mysql
+

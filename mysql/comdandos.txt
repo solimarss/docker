@@ -1,5 +1,7 @@
 https://hub.docker.com/_/mysql/
 
+criar a pasta database nesse diretorio caso não exita.
+
 criar o conteiner com base no arquivo docker-compose.yml 
 docker-compose up -d
 

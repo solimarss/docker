@@ -1,0 +1,22 @@
+https://hub.docker.com/r/lw96/java8-jenkins-maven-git-vim/
+
+criar a pasta database nesse diretorio caso não exita.
+
+criar o conteiner com base no arquivo docker-compose.yml 
+docker-compose up -d
+
+Para o conteiner com base no arquivo docker-compose.yml 
+docker-compose stop
+
+Excluir o conteiner com base no arquivo docker-compose.yml 
+docker-compose rm
+
+Ver o conteiner com base no arquivo docker-compose.yml 
+docker-compose ps
+
+
+Ver o senha inicial do Jenkins:
+docker logs jenkins
+
+Para entrar no container:
+docker exec -it jenkins bash

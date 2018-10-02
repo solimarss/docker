@@ -1,0 +1,16 @@
+# docker-compose file
+version: '2'
+
+services:
+
+  jenkins:
+    container_name: jenkins
+    restart: always
+    image: lw96/java8-jenkins-maven-git-vim
+    ports:
+      - 8050:8080
+    volumes:
+      - ./jenkins-data:/jenkins
+      - ./maven-repository:/root/.m2/repository
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro

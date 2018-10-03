@@ -1,9 +1,0 @@
-mysql:
-  image: mysql
-  environment:
-    - MYSQL_ROOT_PASSWORD=123456
-  volumes:
-    - ./database:/var/lib/mysql
-    - ./shared/:/shared/
-  ports:
-    - 3306:3306

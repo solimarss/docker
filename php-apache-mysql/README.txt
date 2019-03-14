@@ -25,9 +25,6 @@ docker-compose down
 #Ver o conteiner com base no arquivo docker-compose.yml 
 docker-compose ps
 
-#Rodar o canteiner do Composer para executar comandos:
-docker-compose run composer bash
-
 # acessa o terminal de um container
 docker container exec -it NOME-CONTAINER bash
 
@@ -38,6 +35,9 @@ docker volume ls
 docker volume rm NOME-VOLUME
 
 COMPOSER
+#Rodar o canteiner do Composer para executar comandos:
+docker-compose run composer bash
+
 #Iniciar o composer em uma pasta
 composer init
 

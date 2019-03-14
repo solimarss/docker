@@ -10,22 +10,28 @@ Create this directories structure:
 
 
 
-criar o conteiner com base no arquivo docker-compose.yml 
+#criar o conteiner com base no arquivo docker-compose.yml 
 docker-compose up -d
 
-Para o conteiner com base no arquivo docker-compose.yml 
+#Para o conteiner com base no arquivo docker-compose.yml 
 docker-compose stop
 
-Excluir o conteiner com base no arquivo docker-compose.yml 
+#Excluir o conteiner com base no arquivo docker-compose.yml 
 docker-compose rm
 
-Ver o conteiner com base no arquivo docker-compose.yml 
+# para e remove os containers
+docker-compose down
+
+#Ver o conteiner com base no arquivo docker-compose.yml 
 docker-compose ps
 
-Visualizar os volumes persistentes:
+# acessa o terminal de um container
+docker container exec -it NOME-CONTAINER bash
+
+#Visualizar os volumes persistentes:
 docker volume ls
 
-Remover um volume:
+#Remover um volume:
 docker volume rm NOME-VOLUME
 
 

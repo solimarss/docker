@@ -1,7 +1,7 @@
 version: '3.1'
 services:
     www:
-        build: .
+        build: Dockerfile-php
         ports: 
             - "8001:80"
         volumes:
@@ -34,5 +34,10 @@ services:
             MYSQL_USER: user
             MYSQL_PASSWORD: test
             MYSQL_ROOT_PASSWORD: test
+    composer:
+        image: composer:1.8.4
+        volumes: 
+            - ./www:/app
+        working_dir: /app
 volumes:
     persistent:

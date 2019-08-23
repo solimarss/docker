@@ -1,0 +1,1 @@
+Para conectar o PgAdmin no Banco, usar o host como: postgres-compose
